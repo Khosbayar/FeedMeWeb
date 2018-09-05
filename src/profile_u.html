@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>User Profile</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src='images/logo.png' width="30px" height="30px"> Feed Me</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="main.html">Explore                
+              </a>
+            </li>
+            <li class="nav-item dropup">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Register as</a>
+                <div class="dropdown-menu dropup">
+                  <a class="dropdown-item" href="register.html">Supplier</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="register_u.html">User</a>
+                </div>
+            </li>
+            <li class="nav-item dropup">
+                <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
+                <div class="dropdown-menu dropup">
+                  <a class="dropdown-item" href="profile.html">Supplier</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="profile_u.html">User</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <section>
+      
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center headingWhite">User profile</h1>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center headingWhite">Loading...</p>
+          </div>
+          <div id="content">
+            <form onSubmit="App.updateProfile(); return false;">
+                <div class="form-group">
+                  <label for="userName">Name</label>
+                  <input type="text" class="form-control" id="userName" placeholder="Enter your name please">
+                </div>
+                <div class="form-group">
+                    <label for="userArea">Area</label>
+                    <input type="text" class="form-control" id="userArea" placeholder="Enter your area">
+                    <p class="help-block">For now please simply enter zipcode</p>
+                </div>
+                <button type="submit" class="btn btn-success">Update me!</button>
+                <a class="btn btn-default" href="index.html">Back</a>      
+              </form>
+          </div>
+          <hr/>
+          <p id="accountAddress" class="text-center"></p>
+        </div>
+      </div>
+    </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app_profile_u.js"></script>
+</section>
+
+</body>
+
+</html>
